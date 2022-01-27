@@ -12,8 +12,44 @@
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <title>Reverb</title>
     <style>
+        .span-border{
+            border-top-color: rgb(255, 255, 255);
+            border-top-style: solid;
+            border-top-width: 0.1rem;
+            border-right-color: rgb(255, 255, 255);
+            border-right-style: solid;
+            border-right-width: 0.1rem;
+            border-bottom-color: rgb(255, 255, 255);
+            border-bottom-style: solid;
+            border-bottom-width: 0.1rem;
+            border-left-color: rgb(255, 255, 255);
+            border-left-style: solid;
+            border-left-width: 0.1rem;
+        }
+        .span-right-border{
+            border-right-color: rgb(255, 255, 255);
+            border-right-style: solid;
+            border-right-width: 0.1rem;
+        }
         .sofia{
             font-family:  "Sofia", sans-serif;
+        }
+        
+        .white-border{
+            border: white;
+            border-width: 10px;
+            border-color: white;
+        }
+        .para{
+            color: gray;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 80%;
+        }
+        .para:hover{
+            color: white;
+        }
+        .bg-lightblack{
+            background-color: rgb(36, 35, 35);
         }
         .margin-l-309{
             margin-left: 309px;
@@ -49,7 +85,7 @@
         }
         .btn-border{
             color: 10px;
-            border-color: rgb(218, 141, 0);
+            border-color: rgb(255, 166, 0);
             border-width: 2px;
         }
         .border-left-none{
@@ -103,7 +139,7 @@
   <body>
       <nav class="navbar-expand   navbar-light bg-light ">
         <div class="btn-border-dark">
-            <div class="container py-3 ">
+            <div class="container mt-2 mb-4 ">
                 <div class="d-flex ">
                     <h3 class="mt-1 text-dark ">
                         <i><b class="sofia" style="font-size: 120%;">Reverb</b></i>
@@ -622,8 +658,8 @@
                 <div class="mt-5"><br><br><br>
                     <h4 class="" style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Get the Best of Reverb in Your Inbox</h4>
                     <div class="d-flex">
-                        <input type="search" class="input-group-text bg-light btn-border-dark py-2  wstyle " placeholder="Your Email">
-                        <button class="btn btn-dark bg-opacity-75" >Subscribe</button>
+                        <input type="search" class="input-group-text bg-light  py-2  wstyle " style="border-radius: 1px;border-color: black;" placeholder="Your Email">
+                        <button class="btn btn-dark bg-opacity-75" style="border-color: black;" >Subscribe</button>
                     </div>
                     <p class="text-secondary" style="font-size: smaller;">By clicking Subscribe, I agree to receive exclusive offers & promotions, news & reviews, and personalized tips for buying and selling on Reverb.</p>
                 </div>
@@ -919,7 +955,126 @@
         </div>
     </div>
 </div>
-<br><br>
+<div class="bg-lightblack">
+    <div class="container">
+        <div class="d-flex">
+            <div class="mt-5">
+                <p class="text-light">Shop Gear</p>
+                <p class="text-opacity-75 m-1 para">Categories</p>
+                <p class="text-opacity-75 m-1 para">Brands</p>
+                <p class="text-opacity-75 m-1 para">Deals & Steals</p>
+                <p class="text-opacity-75 m-1 para">Price Drops</p>
+                <p class="text-opacity-75 m-1 para">New & Popular</p>
+                <p class="text-opacity-75 m-1 para">Handpicked Collection</p>
+            </div>
+            <div class="mt-5" style="margin-left: 100px;">
+                <p class="text-light">Sell on Reverb</p>
+                <p class="text-opacity-75 m-1 para">SellerHub</p>
+                <p class="text-opacity-75 para">Reverb Payment FAQ</p>
+                <p class="text-light mt-3">Resources</p>
+                <p class="text-opacity-75 m-1 para">Reverb News</p>
+                <p class="text-opacity-75 m-1 para">Price Guide</p>
+                <p class="text-opacity-75 m-1 para">Buying Guide</p>
+            </div>
+            <div class="mt-5" style="margin-left: 100px;">
+                <p class="text-light">Help & Tools</p>
+                <p class="text-opacity-75 m-1 para">Help Center</p>
+                <p class="text-opacity-75 m-1 para">Contact Support</p>
+                <p class="text-opacity-75 m-1 para">Reverb Protection</p>
+                <p class="text-opacity-75 m-1 para">Mobile Apps</p>
+                <p class="text-opacity-75 m-1 para">Integrations & API</p>
+                <p class="text-opacity-75 m-1 para">Affiliate Program</p>
+                <p class="text-opacity-75 m-1 para">Reverb App Store</p>
+                <p class="text-opacity-75 m-1 para">Privacy Settings</p>
+            </div>
+            <div class="mt-5" style="margin-left: 100px;">
+                <p class="text-light">Company</p>
+                <p class="text-opacity-75 m-1 para">About Reverb</p>
+                <p class="text-opacity-75 m-1 para">Careers</p>
+                <p class="text-opacity-75 m-1 para">Press</p>
+                <p class="text-opacity-75 m-1 para">Reverb Gives</p>
+            </div>
+            <div style="margin-left: 150px;margin-top: 50px;">
+                <h5  class="text-light " >Get the best Reverb in your Email</h5>
+                <div class="d-flex">
+                    <input type="search" name="" id="" class="input-group-text" style="border-color: black;" placeholder="Your Email">
+                    <button class="btn btn-light  border-left-none"style="border-color:black;"><b class="text-secondary">Subscribe</b></button>
+                </div>
+                <p class="text-secondary mt-1" style="font-size: 10px;">By clicking Subscribe, I agree to receive exclusive offers & promotions,<br> news & reviews, and personalized tips for buying and selling on Reverb.</p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="bg-black">
+    <div class="container">
+        
+      <div class="d-flex">
+        <div class="row mt-5">
+            <div class="col-3 mt-4">
+         <div class="d-flex">
+             <span class="span-border ">
+              <span><i class="bi bi-globe  span-right-border my-2" style="color: white;padding-right: 1px;"></i></span>
+              <span class="text-light  span-right-border my-2">India</span>
+              <span class="text-light  span-right-border my-2">English</span>
+              <span class="text-light  my-2">$USD</span>
+             </span>
+         </div>
+     </div>
+     <div class="col">
+         <div class="leftmargin">
+             <div class="d-flex">
+                 <i class=" fa-3x" style="color: white;">
+                     <i class="fa fa-music"></i>
+                 </i>
+                 <div>
+                     <h3 class="leftmargin text-light" style="font-size: 15px;">Reverb Gives</h3>
+                     <p class="text-light leftmargin" style="font-size: 15px;" >Your purchases help youth music programs get the <br> gear they need to make music.</p>
+                 </div>
+                 <i class="fa fa-tree fa-3x leftmargin" style="color: white;"></i>
+                 <div>
+                     <h3 class="leftmargin text-light" style="font-size: 15px;">Carbon-Offset Shipping</h3>
+                     <p class="text-light mt-1 leftmargin" style="font-size: 15px;" >Your purchases also help protect forests, including trees <br> traditionally used to make instruments.</p>
+                 </div>
+             </div>
+         </div>
+        </div>
+       
+     </div>
+     <div style="margin-left: 100px;">
+         <div class="d-flex">
+            <i class="bi bi-facebook fa-2x mx-2" style="color: gray;"></i>
+            <i class="bi bi-instagram fa-2x mx-2" style="color: gray;"></i>
+            <i class="bi bi-twitter fa-2x mx-2" style="color: gray;"></i>
+            <i class="bi bi-youtube fa-2x mx-2" style="color: gray;"></i>
+         </div>
+         <div class="mt-2">
+             <div class="d-flex">
+                <img src="https://static.reverb-assets.com/production-assets/webpack/images/apple-app-store-EN-2d698bce503a9752ac54.svg" alt="">
+                <img src="https://static.reverb-assets.com/production-assets/webpack/images/google-play-store-EN-3a553f02cf6c721d6944.svg" alt="">
+             </div>
+             <p style="font-size: 10px;" class="text-light">The Apple logo and the App Store are trademarks of Apple <br> Inc. Google Play and the Google Play logo are trademarks of Google LLC.</p>
+            </div>
+            <div>
+               <div class="d-flex">
+                <p class="mt-3 text-light" style="font-size: 20px;">Scan With your phone  to Get Reverb page</p>
+                <img src="https://static.reverb-assets.com/production-assets/webpack/images/app-install-qr-3650d52ed8a1941da2a9.svg" alt="">
+               </div>
+            </div>
+     </div>
+      </div>
+       <div>
+       <div class="d-flex" style="font-size: 10px;">
+            <p class="text-secondary">© 2022 Reverb.com LLC</p>
+            <a href="">
+               <p class="text-light mx-2">Terms & Policies</p>
+            </a>
+            <a href="">
+               <p class="text-light">Privacy Policy</p>
+            </a>
+       </div>
+       </div>
+    </div>
+</div>
 
     <!-- Optional JavaScript; choose one of the two! -->
 
@@ -933,4 +1088,3 @@
     -->
   </body>
 </html>
-
