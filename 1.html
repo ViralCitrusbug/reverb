@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<!-- JQuery CDN -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+	</script>
+
+	<style>
+		center {
+			font-size: 30px;
+			color: green;
+		}
+
+		.popup {
+			display: none;
+			width: 500px;
+			border: solid red 3px
+		}
+	</style>
+</head>
+
+<body>
+	<center>
+		<p>
+			Hover <a href="#" class="gfg">here</a>
+			to see the changes.
+		</p>
+
+		<div class="popup">
+			<h1>Hello This is Header</h1>
+		</div>
+	</center>
+
+	<script>
+		$flag = -1;
+
+		$("a.gfg").hover(
+			function () {
+				$("div.popup").attr("style", "display:block");
+			},
+			function () {
+				if ($flag == -1) {
+					$("div.popup").attr("style", "display:none");
+				}
+			}
+		);
+
+		$("a.gfg").click(function () {
+			$flag = 1;
+		});
+	</script>
+</body>
+
+</html>
